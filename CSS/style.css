@@ -1,0 +1,11 @@
+/* Selectors{
+            property1: value1;
+            property2: value2;
+        } */
+
+.External {
+    color: blue;
+}
+p {
+    color: orange;
+}
