@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            border: 1px solid black;
+
+        }
+        .fixed{
+            position: fixed;
+            top: 0;
+            right: 0;
+            color: aliceblue;
+            background-color: black;
+        }
+        div[class*="box"]{
+            height: 500px;
+        }
+        .box-1{
+            background-color: teal;
+            color: aliceblue;
+
+        }
+        .box-2{
+            background-color: rgb(0, 19, 128);
+            color: aliceblue;
+
+
+        }
+        .box-3{
+            background-color: rgb(36, 128, 0);
+            color: aliceblue;
+
+
+
+        }
+        .box-4{
+            background-color: rgb(128, 47, 0);
+            color: aliceblue;
+
+
+        }
+        .sticky{
+            position: sticky;
+            top: 0;
+            left: 0;
+        }
+        .box-5{
+            background-color: grey;
+            position: relative;
+            color: aliceblue;
+
+        }
+        div[class*="box-ab"]{
+            position: absolute;
+            width: 300px;
+            height: 300px;
+        }
+        .box-ab-1{
+            background-color: blue;
+            color: aliceblue;
+            top: 50px;
+            left: 50px;
+            z-index: 1;
+        }
+        .box-ab-2{
+            background-color: rgb(255, 0, 43);
+            color: aliceblue;
+            top: 80px;
+            left: 80px;
+            z-index: 10;
+
+
+        }
+        .box-ab-3{
+            background-color: rgb(0, 255, 128);
+            color: rgb(4, 118, 218);
+            top: 110px;
+            left: 110px;
+            z-index: 0;
+
+        }
+        .box-ab-4{
+            background-color: rgb(255, 0, 242);
+            color: aliceblue;
+            top: 140px;
+            left: 140px;
+            z-index: 100;
+
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>position: static;</li>
+        <li>position: relative;</li>
+        <li>position: absolute;</li>
+        <li>position: fixed;</li>
+        <li>position: sticky;</li>
+    </ul>
+    <div class="fixed">Fixed Position</div>
+    <div class="box-1">Box-1</div>
+    <div class="box-2">Box-2</div>
+    <div class="box-3">
+        <div class="sticky">
+            Sticky Position
+        </div>
+    </div>
+    <div class="box-4">Box-4</div>
+    <div class="box-5">box-5
+        <div class="box-ab-1">Box-Ab-1</div>
+        <div class="box-ab-2">Box-Ab-2</div>
+        <div class="box-ab-3">Box-Ab-3</div>
+        <div class="box-ab-4">Box-Ab-4</div>
+    </div>
+</body>
+
+</html>
