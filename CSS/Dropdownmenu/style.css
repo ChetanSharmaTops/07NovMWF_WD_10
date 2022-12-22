@@ -1,0 +1,33 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main{
+  display: block;
+}
+.main a{
+  display: block;
+  font-size: 30px;
+}
+.box{
+  display: none;
+}
+.main:hover .box{
+display: block;
+  margin-left: 50px;
+}
+.box a{
+  display: block;
+  font-size: 30px;
+}
+.down{
+  display: none;
+}
+.drop:hover .down{
+  display: block;
+  margin-left: 50px;
+}
+a{
+  text-decoration: none;
+}
